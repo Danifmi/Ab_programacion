@@ -6,8 +6,10 @@
     ]
   },
   "ExpandedNodes": [
-    ""
+    "",
+    "\\include",
+    "\\src"
   ],
-  "SelectedNode": "\\main.cpp",
+  "SelectedNode": "\\include\\Cita.h",
   "PreviewInSolutionExplorer": false
 }
