@@ -3,18 +3,27 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 
-// Clase que representa a un paciente hospitalizado.
 class Paciente {
 private:
-    std::string nombre;                  // Nombre del paciente.
-    int ID;                              // Identificación única del paciente.
-    std::string fechaIngreso;            // Fecha de ingreso al hospital.
-    std::vector<std::string> historialClinico; // Entradas médicas del historial clínico.
+    int id;                           // ID del paciente
+    std::string nombre;               // Nombre del paciente
+    std::string fechaIngreso;         // Fecha de ingreso
+    std::vector<std::string> historialClinico; // Historial clínico del paciente
 
 public:
-    // Constructor básico para inicializar datos de un paciente.
-    Paciente(const std::string& nombre, int ID, const std::string& fechaIngreso);
+    // Constructor predeterminado
+    Paciente() : id(0), nombre(""), fechaIngreso(""), historialClinico() {}
+
+    // Constructor parametrizado
+    Paciente(int id, const std::string& nombre, const std::string& fechaIngreso);
+
+    // Método para agregar un historial clínico
+    void agregarHistorial(const std::string& historial);
+
+    // Método para mostrar la información del paciente
+    void mostrarPaciente() const;
 };
 
-#endif // PACIENTE_H
+#endif

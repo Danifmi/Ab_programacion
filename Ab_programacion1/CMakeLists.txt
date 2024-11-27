@@ -11,11 +11,17 @@ endif()
 
 project ("Ab_programacion1")
 
+include_directories(${CMAKE_SOURCE_DIR} ../Ab_programacion1/include)
+
 # Agregue un origen al ejecutable de este proyecto.
-add_executable (Ab_programacion1 "main.cpp" "Ab_programacion1.h")
+#add_executable (Ab_programacion1 "main.cpp" "Ab_programacion1.h")
+add_executable(Ab_programacion1 "main.cpp" "../Ab_programacion1/src/Paciente.cpp" "../Ab_programacion1/src/Medico.cpp" "../Ab_programacion1/src/Cita.cpp" "../Ab_programacion1/src/Reportes.cpp")
+
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Ab_programacion1 PROPERTY CXX_STANDARD 20)
 endif()
 
 # TODO: Agregue pruebas y destinos de instalación si es necesario.
+
+

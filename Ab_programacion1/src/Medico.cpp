@@ -1,6 +1,16 @@
+// Medico.cpp
 #include "Medico.h"
+#include <iostream>
 
-// Constructor: inicializa los datos básicos de un médico.
-Medico::Medico(const std::string& nombre, int ID, const std::string& especialidad, bool disponibilidad)
-    : nombre(nombre), ID(ID), especialidad(especialidad), disponibilidad(disponibilidad) {
+Medico::Medico(int id, const std::string& nombre, const std::string& especialidad, bool disponibilidad)
+    : id(id), nombre(nombre), especialidad(especialidad), disponibilidad(disponibilidad) {
 }
+
+void Medico::mostrarMedico() const {
+    std::cout << "ID: " << id
+        << ", Nombre: " << nombre
+        << ", Especialidad: " << especialidad
+        << ", Disponibilidad: " << (disponibilidad ? "Si" : "No")
+        << std::endl;
+}
+

@@ -1,3 +1,7 @@
 # ninja log v6
-36	1776	7542535202449804	CMakeFiles/Ab_programacion1.dir/Ab_programacion1.cpp.obj	d219b23957e31f4a
-1777	2024	7542535219864464	Ab_programacion1.exe	d6037732759ef2c0
+920	1088	7543631788119328	Ab_programacion1.exe	9b5a8248c819b4aa
+21	920	7543631779130669	CMakeFiles/Ab_programacion1.dir/main.cpp.obj	db6caa79c2477107
+38	91	7543627720868276	CMakeFiles/Ab_programacion1.dir/src/Reportes.cpp.obj	7b658ea1cad1cb97
+34	773	7543627720823930	CMakeFiles/Ab_programacion1.dir/src/Cita.cpp.obj	125050d2bd6ec493
+27	776	7543631779194084	CMakeFiles/Ab_programacion1.dir/src/Paciente.cpp.obj	eade03c4cf8101f2
+33	766	7543631779242781	CMakeFiles/Ab_programacion1.dir/src/Medico.cpp.obj	24dd5a47e08be29e

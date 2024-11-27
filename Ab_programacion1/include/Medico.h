@@ -3,17 +3,23 @@
 
 #include <string>
 
-// Clase que representa a un médico del hospital.
+
 class Medico {
 private:
-    std::string nombre;       // Nombre completo del médico.
-    int ID;                   // Identificación única del médico.
-    std::string especialidad; // Especialidad médica del doctor.
-    bool disponibilidad;      // Estado de disponibilidad (true = disponible).
+    int id;                    // ID del médico
+    std::string nombre;        // Nombre del médico
+    std::string especialidad;  // Especialidad del médico
+    bool disponibilidad;       // Disponibilidad del médico (true = disponible, false = no disponible)
 
 public:
-    // Constructor básico para inicializar un médico.
-    Medico(const std::string& nombre, int ID, const std::string& especialidad, bool disponibilidad);
+    // Constructor predeterminado
+    Medico() : id(0), nombre(""), especialidad(""), disponibilidad(false) {}
+
+    // Constructor parametrizado
+    Medico(int id, const std::string& nombre, const std::string& especialidad, bool disponibilidad);
+
+    // Método para mostrar la información del médico
+    void mostrarMedico() const;
 };
 
-#endif // MEDICO_H
+#endif
