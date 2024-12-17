@@ -49,7 +49,7 @@ cmake_ninja_workdir = C$:\Users\danie\OneDrive\Documentos\GIT\Ab_programacion\Ab
 
 build cmake_object_order_depends_target_Ab_programacion1: phony || .
 
-build CMakeFiles\Ab_programacion1.dir\src\main_(2).cpp.obj: CXX_COMPILER__Ab_programacion1_unscanned_Debug C$:\Users\danie\OneDrive\Documentos\GIT\Ab_programacion\Ab_programacion1\src\main$ (2).cpp || cmake_object_order_depends_target_Ab_programacion1
+build CMakeFiles\Ab_programacion1.dir\src\main.cpp.obj: CXX_COMPILER__Ab_programacion1_unscanned_Debug C$:\Users\danie\OneDrive\Documentos\GIT\Ab_programacion\Ab_programacion1\src\main.cpp || cmake_object_order_depends_target_Ab_programacion1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
   INCLUDES = -IC:\Users\danie\OneDrive\Documentos\GIT\Ab_programacion\Ab_programacion1 -IC:\Users\danie\OneDrive\Documentos\GIT\Ab_programacion\Ab_programacion1\..\Ab_programacion1\include
   OBJECT_DIR = CMakeFiles\Ab_programacion1.dir
@@ -97,7 +97,7 @@ build CMakeFiles\Ab_programacion1.dir\src\Reportes.cpp.obj: CXX_COMPILER__Ab_pro
 #############################################
 # Link the executable Ab_programacion1.exe
 
-build Ab_programacion1.exe: CXX_EXECUTABLE_LINKER__Ab_programacion1_Debug CMakeFiles\Ab_programacion1.dir\src\main_(2).cpp.obj CMakeFiles\Ab_programacion1.dir\src\Paciente.cpp.obj CMakeFiles\Ab_programacion1.dir\src\Medico.cpp.obj CMakeFiles\Ab_programacion1.dir\src\Cita.cpp.obj CMakeFiles\Ab_programacion1.dir\src\Reportes.cpp.obj
+build Ab_programacion1.exe: CXX_EXECUTABLE_LINKER__Ab_programacion1_Debug CMakeFiles\Ab_programacion1.dir\src\main.cpp.obj CMakeFiles\Ab_programacion1.dir\src\Paciente.cpp.obj CMakeFiles\Ab_programacion1.dir\src\Medico.cpp.obj CMakeFiles\Ab_programacion1.dir\src\Cita.cpp.obj CMakeFiles\Ab_programacion1.dir\src\Reportes.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

@@ -1,5 +1,6 @@
 # ninja log v6
-1253	1484	7544258267233844	Ab_programacion1.exe	9b5a8248c819b4aa
+1599	1889	7561502064196854	Ab_programacion1.exe	3bdb808f6eb6c0da
+27	1598	7561502048478557	CMakeFiles/Ab_programacion1.dir/src/main.cpp.obj	d21e134595c52a44
 12	1252	7544258254849211	CMakeFiles/Ab_programacion1.dir/main.cpp.obj	e518e53abafad060
 34	122	7544258255078059	CMakeFiles/Ab_programacion1.dir/src/Reportes.cpp.obj	fb986190d6095d11
 29	1035	7544258255023559	CMakeFiles/Ab_programacion1.dir/src/Cita.cpp.obj	a7aa4b4d18908c8f
