@@ -1,34 +1,126 @@
 ﻿#include <iostream>
-#include "Paciente.h"
-#include "Medico.h"
-#include "Cita.h"
+#include <map>
+#include <unordered_map>
+#include <vector>
+#include <string>
+#include "../Ab_programacion1/include/Paciente.h"
+#include "../Ab_programacion1/include/Medico.h"
+#include "../Ab_programacion1/include/Cita.h"
+
+
+void mostrarMenu() {
+    std::cout << "\n--- Menu ---\n";
+    std::cout << "1. Agregar paciente\n";
+    std::cout << "2. Agregar medico\n";
+    std::cout << "3. Agendar cita\n";
+    std::cout << "4. Mostrar pacientes\n";
+    std::cout << "5. Mostrar medicos\n";
+    std::cout << "6. Mostrar citas\n";
+    std::cout << "0. Salir\n";
+    std::cout << "Seleccione una opcion: ";
+}
 
 int main() {
-    // Crear un paciente
-    Paciente paciente1("Juan Pérez", 1, "01-01-2024");
-    paciente1.agregarHistorial("Diagnóstico: Gripe");
+    std::map<int, Paciente> pacientes;
+    std::unordered_map<int, Medico> medicos;
+    std::vector<Cita> citas;
 
-    // Mostrar información del paciente
-    std::cout << "Paciente: " << paciente1.getNombre() << "\n";
-    std::cout << "ID: " << paciente1.getID() << "\n";
-    std::cout << "Fecha de ingreso: " << paciente1.getFechaIngreso() << "\n";
+    int opcion;
+    do {
+        mostrarMenu();
+        std::cin >> opcion;
 
-    // Crear un médico
-    Medico medico1("Dra. Gómez", 101, "Pediatría", true);
+        switch (opcion) {
+        case 1: {
+            // Agregar paciente
+            int id;
+            std::string nombre, fechaIngreso;
+            std::cout << "Ingrese ID del paciente: ";
+            std::cin >> id;
+            std::cin.ignore();  // Limpiar el buffer
+            std::cout << "Ingrese nombre del paciente: ";
+            std::getline(std::cin, nombre);
+            std::cout << "Ingrese fecha de ingreso (DD-MM-YYYY): ";
+            std::getline(std::cin, fechaIngreso);
 
-    // Mostrar información del médico
-    std::cout << "Médico: " << medico1.getNombre() << "\n";
-    std::cout << "Especialidad: " << medico1.getEspecialidad() << "\n";
-    std::cout << "Disponibilidad: " << (medico1.isDisponible() ? "Disponible" : "No disponible") << "\n";
+            Paciente p(id, nombre, fechaIngreso);
+            pacientes[id] = p;
+            std::cout << "Paciente agregado con exito.\n";
+            break;
+        }
+        case 2: {
+            // Agregar medico
+            int id;
+            std::string nombre, especialidad;
+            bool disponibilidad;
+            std::cout << "Ingrese ID del medico: ";
+            std::cin >> id;
+            std::cin.ignore();  // Limpiar el buffer
+            std::cout << "Ingrese nombre del medico: ";
+            std::getline(std::cin, nombre);
+            std::cout << "Ingrese especialidad del medico: ";
+            std::getline(std::cin, especialidad);
+            std::cout << "¿Esta disponible? (1 para si, 0 para no): ";
+            std::cin >> disponibilidad;
 
-    // Crear una cita
-    Cita cita1(paciente1.getID(), medico1.getID(), "15-01-2024", 3);
+            Medico m(id, nombre, especialidad, disponibilidad);
+            medicos[id] = m;
+            std::cout << "Medico agregado con exito.\n";
+            break;
+        }
+        case 3: {
+            // Agendar cita
+            int pacienteID, medicoID, urgencia;
+            std::string fecha;
+            std::cout << "Ingrese ID del paciente: ";
+            std::cin >> pacienteID;
+            std::cout << "Ingrese ID del medico: ";
+            std::cin >> medicoID;
+            std::cin.ignore();  // Limpiar el buffer
+            std::cout << "Ingrese fecha de la cita (DD-MM-YYYY): ";
+            std::getline(std::cin, fecha);
+            std::cout << "Ingrese nivel de urgencia (1-5): ";
+            std::cin >> urgencia;
 
-    // Mostrar información de la cita
-    std::cout << "Cita programada para el paciente ID: " << cita1.getPacienteID()
-        << " con el médico ID: " << cita1.getMedicoID() << "\n";
-    std::cout << "Fecha de la cita: " << cita1.getFecha() << "\n";
-    std::cout << "Nivel de urgencia: " << cita1.getUrgencia() << "\n";
+            // Crear y agregar la cita
+            Cita cita(pacienteID, medicoID, fecha, urgencia);
+            citas.push_back(cita);
+            std::cout << "Cita agendada con exito.\n";
+            break;
+        }
+        case 4: {
+            // Mostrar pacientes
+            std::cout << "\n--- Pacientes ---\n";
+            for (const auto& p : pacientes) {
+                p.second.mostrarPaciente();
+            }
+            break;
+        }
+        case 5: {
+            // Mostrar Medicos
+            std::cout << "\n--- Medicos ---\n";
+            for (const auto& m : medicos) {
+                m.second.mostrarMedico();
+            }
+            break;
+        }
+        case 6: {
+            // Mostrar citas
+            std::cout << "\n--- Citas ---\n";
+            for (const auto& cita : citas) {
+                cita.mostrarCita();
+            }
+            break;
+        }
+        case 0:
+            std::cout << "Saliendo...\n";
+            break;
+        default:
+            std::cout << "Opcion no valida. Intente nuevamente.\n";
+            break;
+        }
+
+    } while (opcion != 0);
 
     return 0;
 }

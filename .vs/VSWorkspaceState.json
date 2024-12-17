@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Ab_programacion1"
+    "\\Ab_programacion1",
+    "\\Ab_programacion1\\src"
   ],
+  "SelectedNode": "\\Ab_programacion1\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }

@@ -1,3 +1,3 @@
-C:/Users/danie/source/repos/Danifmi/Ab_programacion/Ab_programacion1/out/build/x64-debug/CMakeFiles/Ab_programacion1.dir
-C:/Users/danie/source/repos/Danifmi/Ab_programacion/Ab_programacion1/out/build/x64-debug/CMakeFiles/edit_cache.dir
-C:/Users/danie/source/repos/Danifmi/Ab_programacion/Ab_programacion1/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/danie/OneDrive/Documentos/GIT/Ab_programacion/Ab_programacion1/out/build/x64-debug/CMakeFiles/Ab_programacion1.dir
+C:/Users/danie/OneDrive/Documentos/GIT/Ab_programacion/Ab_programacion1/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/danie/OneDrive/Documentos/GIT/Ab_programacion/Ab_programacion1/out/build/x64-debug/CMakeFiles/rebuild_cache.dir

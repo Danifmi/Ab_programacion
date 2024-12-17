@@ -1,7 +1,7 @@
 # ninja log v6
-920	1088	7543631788119328	Ab_programacion1.exe	9b5a8248c819b4aa
-21	920	7543631779130669	CMakeFiles/Ab_programacion1.dir/main.cpp.obj	db6caa79c2477107
-38	91	7543627720868276	CMakeFiles/Ab_programacion1.dir/src/Reportes.cpp.obj	7b658ea1cad1cb97
-34	773	7543627720823930	CMakeFiles/Ab_programacion1.dir/src/Cita.cpp.obj	125050d2bd6ec493
-27	776	7543631779194084	CMakeFiles/Ab_programacion1.dir/src/Paciente.cpp.obj	eade03c4cf8101f2
-33	766	7543631779242781	CMakeFiles/Ab_programacion1.dir/src/Medico.cpp.obj	24dd5a47e08be29e
+1253	1484	7544258267233844	Ab_programacion1.exe	9b5a8248c819b4aa
+12	1252	7544258254849211	CMakeFiles/Ab_programacion1.dir/main.cpp.obj	e518e53abafad060
+34	122	7544258255078059	CMakeFiles/Ab_programacion1.dir/src/Reportes.cpp.obj	fb986190d6095d11
+29	1035	7544258255023559	CMakeFiles/Ab_programacion1.dir/src/Cita.cpp.obj	a7aa4b4d18908c8f
+18	1038	7544258254901342	CMakeFiles/Ab_programacion1.dir/src/Paciente.cpp.obj	6b7030696305e726
+23	1051	7544258254964477	CMakeFiles/Ab_programacion1.dir/src/Medico.cpp.obj	bb88c5aff59a332c
