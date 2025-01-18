@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ab_programacion1\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ab_programacion1\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\Medico.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ab_programacion1\\src\\Medico.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -19,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ab_programacion1\\include\\Medico.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\Paciente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ab_programacion1\\src\\Paciente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\include\\Paciente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ab_programacion1\\include\\Paciente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\Paciente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ab_programacion1\\src\\Paciente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\Cita.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -33,6 +25,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\include\\Cita.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ab_programacion1\\include\\Cita.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ab_programacion1\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ab_programacion1\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +50,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "CMakeLists.txt",
               "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\CMakeLists.txt",
               "RelativeDocumentMoniker": "Ab_programacion1\\CMakeLists.txt",
@@ -58,24 +58,12 @@
               "RelativeToolTip": "Ab_programacion1\\CMakeLists.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-12-17T14:39:59.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\main.cpp",
-              "RelativeDocumentMoniker": "Ab_programacion1\\src\\main.cpp",
-              "ToolTip": "C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\main.cpp",
-              "RelativeToolTip": "Ab_programacion1\\src\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-03T14:38:23.149Z",
+              "WhenOpened": "2024-12-17T14:39:59.927Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Cita.h",
               "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\include\\Cita.h",
               "RelativeDocumentMoniker": "Ab_programacion1\\include\\Cita.h",
@@ -83,11 +71,12 @@
               "RelativeToolTip": "Ab_programacion1\\include\\Cita.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-26T22:04:12.138Z"
+              "WhenOpened": "2024-11-26T22:04:12.138Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Cita.cpp",
               "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\Cita.cpp",
               "RelativeDocumentMoniker": "Ab_programacion1\\src\\Cita.cpp",
@@ -95,11 +84,12 @@
               "RelativeToolTip": "Ab_programacion1\\src\\Cita.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-26T22:03:51.618Z"
+              "WhenOpened": "2024-11-26T22:03:51.618Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Paciente.cpp",
               "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\Paciente.cpp",
               "RelativeDocumentMoniker": "Ab_programacion1\\src\\Paciente.cpp",
@@ -107,23 +97,38 @@
               "RelativeToolTip": "Ab_programacion1\\src\\Paciente.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-26T21:53:28.96Z"
+              "WhenOpened": "2024-11-26T21:53:28.96Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Medico.cpp",
               "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\Medico.cpp",
               "RelativeDocumentMoniker": "Ab_programacion1\\src\\Medico.cpp",
               "ToolTip": "C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\Medico.cpp",
               "RelativeToolTip": "Ab_programacion1\\src\\Medico.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-26T21:53:24.33Z"
+              "WhenOpened": "2024-11-26T21:53:24.33Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\main.cpp",
+              "RelativeDocumentMoniker": "Ab_programacion1\\src\\main.cpp",
+              "ToolTip": "C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\src\\main.cpp",
+              "RelativeToolTip": "Ab_programacion1\\src\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-03T14:38:23.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Paciente.h",
               "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\include\\Paciente.h",
               "RelativeDocumentMoniker": "Ab_programacion1\\include\\Paciente.h",
@@ -131,11 +136,12 @@
               "RelativeToolTip": "Ab_programacion1\\include\\Paciente.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-26T21:53:12.238Z"
+              "WhenOpened": "2024-11-26T21:53:12.238Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Medico.h",
               "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Documentos\\GIT\\Ab_programacion\\Ab_programacion1\\include\\Medico.h",
               "RelativeDocumentMoniker": "Ab_programacion1\\include\\Medico.h",
@@ -143,7 +149,8 @@
               "RelativeToolTip": "Ab_programacion1\\include\\Medico.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-26T21:51:16.219Z"
+              "WhenOpened": "2024-11-26T21:51:16.219Z",
+              "EditorCaption": ""
             }
           ]
         }

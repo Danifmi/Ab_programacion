@@ -10,20 +10,28 @@ private:
     int id;                           // ID del paciente
     std::string nombre;               // Nombre del paciente
     std::string fechaIngreso;         // Fecha de ingreso
-    std::vector<std::string> historialClinico; // Historial clínico del paciente
+    static int contadorID;            // Contador estático para asignar IDs únicos
 
 public:
     // Constructor predeterminado
-    Paciente() : id(0), nombre(""), fechaIngreso(""), historialClinico() {}
+    Paciente() : id(0), nombre(""), fechaIngreso("") {}
 
     // Constructor parametrizado
-    Paciente(int id, const std::string& nombre, const std::string& fechaIngreso);
+    Paciente(const std::string& nombre, const std::string& fechaIngreso);
 
-    // Método para agregar un historial clínico
-    void agregarHistorial(const std::string& historial);
 
     // Método para mostrar la información del paciente
     void mostrarPaciente() const;
+
+    // Getter para el ID
+    int getID() const { return id; }
+
+    //Métodos de validación 
+    bool validarFecha(const std::string& fecha);
+    bool validarNombre(const std::string& nombre);
+
+    //Método para generar ID único
+    static int generarID();
 };
 
 #endif

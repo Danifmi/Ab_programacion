@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Ab_programacion1",
+    "\\Ab_programacion1\\include",
+    "\\Ab_programacion1\\out",
     "\\Ab_programacion1\\src"
   ],
-  "SelectedNode": "\\Ab_programacion1",
+  "SelectedNode": "\\Ab_programacion1\\src\\Medico.cpp",
   "PreviewInSolutionExplorer": false
 }
