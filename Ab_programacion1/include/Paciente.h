@@ -2,7 +2,6 @@
 #define PACIENTE_H
 
 #include <string>
-#include <vector>
 #include <iostream>
 
 class Paciente {
@@ -29,6 +28,10 @@ public:
     //Métodos de validación 
     bool validarFecha(const std::string& fecha);
     bool validarNombre(const std::string& nombre);
+
+    //Métodos para modificar un paciente
+    void setNombre(const std::string& nuevoNombre) { nombre = nuevoNombre; }
+    void setFechaIngreso(const std::string& nuevaFecha) { fechaIngreso = nuevaFecha; }
 
     //Método para generar ID único
     static int generarID();

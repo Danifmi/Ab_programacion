@@ -1,11 +1,11 @@
 // Medico.cpp
 #include "Medico.h"
-#include <iostream>
 
 int Medico::contadorID = 1; // Inicializamos el contador
 
 Medico::Medico(const std::string& nombre, const std::string& especialidad, bool disponibilidad)
-    : id(contadorID++), nombre(nombre), especialidad(especialidad), disponibilidad(disponibilidad) {
+    : nombre(nombre), especialidad(especialidad), disponibilidad(disponibilidad) {
+    this->id = generarID();//Generar ID una vez todo es valido
 }
 
 void Medico::mostrarMedico() const {
@@ -16,3 +16,14 @@ void Medico::mostrarMedico() const {
         << std::endl;
 }
 
+bool Medico::validarNombre(const std::string& nombre) {
+    return !nombre.empty();
+}
+
+bool Medico::validarEspecialidad(const std::string& especialidad) {
+    return !especialidad.empty();
+}
+
+int Medico::generarID() {
+    return contadorID++;
+}
