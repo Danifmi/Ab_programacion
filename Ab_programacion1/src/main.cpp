@@ -3,9 +3,92 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
+#include <fstream>
+#include <sstream>
 #include "../Ab_programacion1/include/Paciente.h"
 #include "../Ab_programacion1/include/Medico.h"
 #include "../Ab_programacion1/include/Cita.h"
+
+void static cargarPacientes(std::map<int, Paciente>& pacientes) {
+    std::ifstream archivo("pacientes.txt");
+    std::string linea;
+
+    while (getline(archivo, linea)) {
+        std::stringstream ss(linea);
+        std::string idStr, nombre, fechaIngreso;
+
+        // Leer campos separados por ';'
+        getline(ss, idStr, ';');
+        getline(ss, nombre, ';');
+        getline(ss, fechaIngreso, ';');
+
+        // Convertir ID de string a int
+        int id = std::stoi(idStr);
+
+        // Crear objeto Paciente y agregarlo al mapa
+        Paciente paciente(nombre, fechaIngreso);
+        pacientes[id] = paciente;
+    }
+
+    archivo.close();
+}
+
+// Función para cargar médicos
+void static cargarMedicos(std::unordered_map<int, Medico>& medicos) {
+    std::ifstream archivo("medicos.txt");
+    std::string linea;
+
+    while (getline(archivo, linea)) {
+        std::stringstream ss(linea);
+        std::string idStr, nombre, especialidad, disponibilidad;
+
+        // Leer campos separados por ';'
+        getline(ss, idStr, ';');
+        getline(ss, nombre, ';');
+        getline(ss, especialidad, ';');
+        getline(ss, disponibilidad, ';');
+
+        // Convertir ID de string a int
+        int id = std::stoi(idStr);
+
+        // Convertir disponibilidad ("Si" o "No") a un booleano
+        bool estaDisponible = (disponibilidad == "Si");
+
+        // Crear objeto Medico y agregarlo al mapa
+        Medico medico(nombre, especialidad, estaDisponible);
+        medicos[id] = medico;
+    }
+    archivo.close();
+}
+
+// Función para cargar citas
+void static cargarCitas(std::unordered_map<int, Cita>& citas) {
+    std::ifstream archivo("citas.txt");
+    std::string linea;
+
+    while (getline(archivo, linea)) {
+        std::stringstream ss(linea);
+        std::string idStr, pacienteIDStr, medicoIDStr, fechaCita, urgenciaStr;
+
+        // Leer campos separados por ';'
+        getline(ss, idStr, ';');
+        getline(ss, pacienteIDStr, ';');
+        getline(ss, medicoIDStr, ';');
+        getline(ss, fechaCita, ';');
+        getline(ss, urgenciaStr, ';');
+
+        // Convertir ID, pacienteID, medicoID y urgencia de string a int
+        int id = std::stoi(idStr);
+        int pacienteID = std::stoi(pacienteIDStr);
+        int medicoID = std::stoi(medicoIDStr);
+        int urgencia = std::stoi(urgenciaStr);
+
+        // Crear objeto Cita y agregarlo al mapa
+        Cita cita(pacienteID, medicoID, fechaCita, urgencia);
+        citas[id] = cita;
+    }
+    archivo.close();
+}
 
 
 void static mostrarMenu() {
@@ -21,6 +104,11 @@ int main() {
     std::map<int, Paciente> pacientes;
     std::unordered_map<int, Medico> medicos;
     std::unordered_map<int, Cita> citas;
+
+    // Cargar los datos desde los archivos
+    cargarPacientes(pacientes);
+    cargarMedicos(medicos);
+    cargarCitas(citas);
 
     int opcion;
     do {
@@ -405,6 +493,18 @@ int main() {
             }
         
     } while (opcion != 0);
+
+    for (const auto& paciente : pacientes) {
+        Paciente::guardarPaciente(paciente.second);
+    }
+
+    for (const auto& medico : medicos) {
+        Medico::guardarMedico(medico.second);
+    }
+
+    for (const auto& cita : citas) {
+        Cita::guardarCita(cita.second);
+    }
 
     return 0;
 }

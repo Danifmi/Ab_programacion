@@ -22,7 +22,11 @@ public:
     // Método para mostrar la información del médico
     void mostrarMedico() const;
 
+    //getters
     int getID() const { return id; }
+    std::string getNombre() const { return nombre; }
+    std::string getEspecialidad() const { return especialidad; }
+    bool getDisponibilidad() const { return disponibilidad; };
 
     //Métodos de validación
     bool validarNombre(const std::string& nombre);
@@ -35,6 +39,8 @@ public:
 
     //Método para generar ID único
     static int generarID();
+
+    static void guardarMedico(const Medico& medico);
 };
 
 #endif

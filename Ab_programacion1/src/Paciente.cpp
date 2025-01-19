@@ -35,3 +35,13 @@ bool Paciente::validarNombre(const std::string& nombre) {
 int Paciente::generarID() {
     return contadorID++;
 }
+
+//Método para guardar en un archivo
+void Paciente::guardarPaciente(const Paciente& paciente) {
+    std::ofstream archivo("pacientes.txt", std::ios::app);
+    if (archivo.is_open()) {
+        archivo << paciente.getID() << ";" << paciente.getNombre() << ";" << paciente.getFechaIngreso() << std::endl;
+    }
+    archivo.close();
+}
+

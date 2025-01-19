@@ -1,5 +1,5 @@
-// Medico.cpp
 #include "Medico.h"
+#include<fstream>
 
 int Medico::contadorID = 1; // Inicializamos el contador
 
@@ -26,4 +26,12 @@ bool Medico::validarEspecialidad(const std::string& especialidad) {
 
 int Medico::generarID() {
     return contadorID++;
+}
+
+void Medico::guardarMedico(const Medico& medico) {
+    std::ofstream archivo("medicos.txt", std::ios::app);
+    if (archivo.is_open()) {
+        archivo << medico.getID() << ";" << medico.getNombre() << ";" << medico.getEspecialidad() << ";" << (medico.getDisponibilidad() ? "Si" : "No") << std::endl;
+    }
+    archivo.close();
 }

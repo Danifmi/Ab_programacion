@@ -1,5 +1,5 @@
 #include "Cita.h"
-
+#include <fstream>
 //Inicializamos contador 
 int Cita::contadorID = 1;
 
@@ -48,3 +48,12 @@ bool Cita::validarMedicoID(int idMedico, const std::unordered_map<int, Medico>& 
 int Cita::generarID() {
     return contadorID++;
 }
+
+void Cita::guardarCita(const Cita& cita) {
+    std::ofstream archivo("citas.txt", std::ios::app);
+    if (archivo.is_open()) {
+        archivo << cita.getID() << ";" << cita.getPacienteID() << ";" << cita.getMedicoID() << ";" << cita.getFechaCita() << ";" << cita.getUrgencia() << std::endl;
+    }
+    archivo.close();
+}
+

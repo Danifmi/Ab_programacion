@@ -31,7 +31,9 @@ public:
     // Getters
     int getID() const { return id; }
     int getPacienteID() const { return pacienteID; }
-    int getMedicoID() const { return medicoID; };
+    int getMedicoID() const { return medicoID; }
+    std::string getFechaCita() const { return fechaCita; }
+    int getUrgencia() const { return urgencia; }
 
     //Métodos de validación
     bool validarFecha(const std::string& fecha);
@@ -47,6 +49,8 @@ public:
 
     //Método para generar un ID único
     static int generarID();
+
+    static void guardarCita(const Cita& cita);
 
 };
 

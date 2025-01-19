@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+#include <fstream>
 
 class Paciente {
 private:
@@ -24,6 +25,8 @@ public:
 
     // Getter para el ID
     int getID() const { return id; }
+    std::string getNombre() const{ return nombre; }
+    std::string getFechaIngreso() const { return fechaIngreso; };
 
     //Métodos de validación 
     bool validarFecha(const std::string& fecha);
@@ -35,6 +38,8 @@ public:
 
     //Método para generar ID único
     static int generarID();
+
+    static void guardarPaciente(const Paciente& paciente);
 };
 
 #endif
